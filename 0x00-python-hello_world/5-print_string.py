@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 str = "Holberton School"
-print(str + str + str + "Holberton")
+print(str + str + str + "\nHolberton")
