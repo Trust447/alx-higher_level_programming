@@ -5,7 +5,7 @@ def divisible_by_2(my_list=[]):
         if my_list[items] % 2 == 0:
             new_list.append(True)
         else:
-            new.append(False)
+            new_list.append(False)
     return new_list
 
 
