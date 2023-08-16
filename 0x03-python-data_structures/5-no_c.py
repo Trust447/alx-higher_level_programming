@@ -1,5 +1,9 @@
 #!/usr/bin/pytthon3
 def no_c(my_string):
-    translate_char = str.maketrans('', '', 'cC')
-    new_string = my_string.translate(translate_char)
-    return new_string
+    if my_string:
+        new_string = ""
+        for char in my_string:
+            if char != 'c' and char != 'C':
+                new_string += char
+        return new_string
+    return my_string
