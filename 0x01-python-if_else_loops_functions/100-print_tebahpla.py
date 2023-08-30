@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-print_higher = False
-for char_number in range(-122, -96):
-    char_number = -char_number
-    if print_higher:
-        char_number = char_number - (ord('a') - ord('A'))
-        print("{character}".format(character=chr(char_number)), end="")
-        print_higher = not print_higher
+for i in range(122, 96, -1):
+    if (i % 2 != 0):
+        i = i - 32
+    print('{}'.format(chr(i)), end='')
