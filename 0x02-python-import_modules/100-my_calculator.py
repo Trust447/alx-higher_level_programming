@@ -27,5 +27,3 @@ def arg_calc(argv):
          from calculator_1 import add, sub, mul, div
          arg_calc(sys.argv)
          exit(0)
-            
-
