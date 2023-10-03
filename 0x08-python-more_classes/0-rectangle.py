@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+
 class Rectangle:
+
+    ''' an empty class'''
     ...
-''' an empty class'''
