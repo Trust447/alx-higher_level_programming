@@ -11,12 +11,12 @@ class Rectangle:
 
         self.__width = width
         self.__height = height
-    def get_width(self):
+    def width(self):
         """width getter method"""
 
         return self.__width
 
-    def set_width(self, value):
+    def width(self, value):
         """width setter method"""
 
         if type(value) is not int:
@@ -25,12 +25,12 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    def get_height(self):
+    def height(self):
         """height getter method"""
 
         return self.__height
 
-    def set_height(self, value):
+    def height(self, value):
         """height setter method"""
 
         if type(value) is not int:
