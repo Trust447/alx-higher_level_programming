@@ -7,7 +7,7 @@ representation of an object (string)
 """
 
 
-json = __import__(json).json
+import json
 
 
 def to_json_string(my_obj):
