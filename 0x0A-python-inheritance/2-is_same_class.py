@@ -2,7 +2,7 @@
 
 
 """
-a module that defines a function that checks for class type
+a module that defines a function/method that checks for class type
 """
 
 
