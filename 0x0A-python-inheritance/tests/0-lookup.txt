@@ -1,0 +1,4 @@
+Importing the python code:
+>>>lookup = __import__(0-lookup).lookup
+
+TEST CASE ONE: 
