@@ -13,7 +13,8 @@ my_list = []
 if os.path.exist(add_item.json):
     my_list = load_from_j(add_item.json)
 else:
-    for args in sys.argv[1:]:
-        my_list.append(args)
+    my_list = []
+for args in sys.argv[1:]:
+    my_list.append(args)
 
-    save_to_j(my_list, add_item.json)
+save_to_j(my_list, add_item.json)
