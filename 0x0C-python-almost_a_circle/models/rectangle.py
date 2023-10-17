@@ -87,7 +87,6 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
         self.__y = value
 
-
     def area(self):
 
         """method that clculates the area of a rectangle"""
