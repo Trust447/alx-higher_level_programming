@@ -1,51 +1,51 @@
 #!/usr/bin/python3
-"""Module3-rectangle
-DefinesaRectangleclass.
-"""
+
+"""module for a rectangle"""
 
 
-classRectangle:
-    """Rectangleclassdefinedbywidthandheight."""
+class Rectangle:
 
-    def__init__(self, width=0, height=0):
-        """InitializesaRectangleinstance.
-        Args:
-        width:widthoftherectangle
-        height:heightoftherectangle
-        """
+    """creating a rectangle class"""
+    def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
 
-    def__str__(self):
-        """Returnsaninformalandnicelyprintablestringrepresentation
-        ofaRectangleinstance,filledwiththe'#'character."""
-        ifself.__height == 0 orself.__width == 0:
-            return''
-    rec_str = ''
-    for i in range(self.__height):
-        for j in range(self.__width):
-            rec_str += '#'
-    rec_str + = '\n'
-    returnrec_str[:-1]
-
     @property
-    defwidth(self):
-        """RetrievesthewidthofaRectangleinstance."""
-    returnself.__width
+    def width(self):
+        """width getter"""
+        return self.__width
 
     @width.setter
     def width(self, value):
-        """SetsthewidthofaRectangleinstance
-        Args:
-        value:valueofthewidth,mustbeapositiveinteger
-        """
-        if not isinstance(value, int):
-            raise TypeError("width must bean integer")
-        if value < 0:
-            raise ValueError("widthmustbe > = 0")
+        """width setter"""
+        if type(width) is not int:
+            raise TypeError("width must be an integer")
+        if width is < 0:
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
     def height(self):
-        """RetrievestheheightofaRectangleinstance."""
+        """height getter"""
         return self.__height
+
+    @height.setter
+    def height(self, value):
+        """height setter"""
+        if type(height) is not int:
+            raise TypeError("height must be an integer")
+        if width is < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
+
+    def area(self):
+
+        """calculate area of a rectangle"""
+        return self.__height * self.__width
+
+    def perimeter(self):
+
+        """calculate perimeter of a rectangle"""
+        if self.__height == 0 or self.__width == 0:
+            return 0
+        return 2 * (self.__height + self.__width)
