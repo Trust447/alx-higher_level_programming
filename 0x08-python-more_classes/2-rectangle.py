@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """
-module for a rectangle
+the module defines a rectangle
 """
 
 
 class Rectangle:
 
     """creating a rectangle class"""
+
     def __init__(self, width=0, height=0):
 
         """ class constructor"""
