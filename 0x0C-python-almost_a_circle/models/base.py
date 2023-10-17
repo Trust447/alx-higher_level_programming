@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-
-import json
-
-
 """
 a module that has the base of other classes in the project
 """
+import json
 
 
 class Base:
