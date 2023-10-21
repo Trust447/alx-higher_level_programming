@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 """module that that defines a rectangle"""
 
 
