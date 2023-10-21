@@ -8,10 +8,10 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
-    def __del__(self):
+    """def __del__(self):"""
 
         """method to keep track of deleted instance"""
-        Rectangle.number_of_instances -= 1
+        """Rectangle.number_of_instances -= 1"""
 
     def __init__(self, width=0, height=0):
 
