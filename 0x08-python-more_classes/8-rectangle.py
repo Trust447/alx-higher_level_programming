@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+
+
 """module that that defines a rectangle"""
 
 
-
 class Rectangle:
-    
+
     """defining a rectangle class"""
     number_of_instances = 0
     print_symbol = "#"
