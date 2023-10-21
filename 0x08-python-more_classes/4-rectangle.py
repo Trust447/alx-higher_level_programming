@@ -5,7 +5,6 @@
 class Rectangle:
     """defining a rectangle class"""
 
-
     def __init__(self, width=0, height=0):
 
         """a class constructor"""
@@ -35,14 +34,14 @@ class Rectangle:
         return self.__height
 
     @height.setter
-     def height(self, value):
+    def height(self, value):
 
-         """height setter"""
-         if type(value) is not int:
-             raise TypeError("height must be an integer")
-         if value < 0:
-             raise ValueError("height must be >= 0")
-         self.__height = value
+        """height setter"""
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
 
     def area(self):
 
@@ -58,7 +57,7 @@ class Rectangle:
             return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        
+
         """print the rectangle with the character #"""
         if self.__width == 0 or self.__height == 0:
             return ""
@@ -68,7 +67,7 @@ class Rectangle:
         return "{}".format(rect[:-1])
 
     def __repr__(self):
-        
+
         """Return a string representation that can recreate a new
         instance."""
         return "Rectangle({}, {})".format(
