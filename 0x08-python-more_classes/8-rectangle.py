@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module that defines a rectangle"""
+"""module that that defines a rectangle"""
 
 
 
