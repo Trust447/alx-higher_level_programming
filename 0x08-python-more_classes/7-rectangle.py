@@ -73,7 +73,7 @@ class Rectangle:
             return ""
         rect = ""
         for i in range(self.height):
-            rect += str(Rectangle.print_symbol) * self.width + "\n"
+            rect += str(self.print_symbol) * self.width + "\n"
             return "{}".format(rect[:-1])
 
     def __repr__(self):
