@@ -3,7 +3,6 @@
 
 
 class Rectangle:
-
     """defining a rectangle class"""
     number_of_instances = 0
     print_symbol = "#"
@@ -83,19 +82,19 @@ class Rectangle:
         return "Rectangle({}, {})".format(
                 self.__width, self.__height)i
 
-        @staticmethod
-        def bigger_or_equal(rect_1, rect_2):
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
 
-            """returns the biggest rectangle based on the area"""
-            if not isinstance(rect_1, Rectangle):
-                raise TypeError("rect_1 must be an instance of Rectangle")
-            if not isinstance(rect_2, Rectangle):
-                raise TypeError("rect_2 must be an instance of Rectangle")
+        """returns the biggest rectangle based on the area"""
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
 
-            area_1 = rect_1.width * rect_1.height
-            area_2 = rect_2.width * rect_2.height
+        area_1 = rect_1.width * rect_1.height
+        area_2 = rect_2.width * rect_2.height
 
-            if area_1 >= area_2:
-                return rect_1
-            else:
-                return rect_2
+        if area_1 >= area_2:
+            return rect_1
+        else:
+            return rect_2
