@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 module that defines a function that returns True
 if the object is an instance of,

@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 """
 module with a method that prints lists in sorted form
 """
