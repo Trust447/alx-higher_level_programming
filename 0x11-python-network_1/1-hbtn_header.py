@@ -11,4 +11,4 @@ if __name__ == "__main__":
 
     url = urllib.request.Request(URL)
     with urllib.request.urlopen(url) as Response:
-        print(dict(Response.headers).get("X-Request-Id"))
+        print(Response.getheader("X-Request-Id"))
