@@ -7,12 +7,9 @@ import sys
 
 
 
-if len(sys.argv) != 2:
-    sys.exit(1)
-
-URL = sys.argv[1]
-
 if __name__ == "__main__":
+    URL = sys.argv[1]
+
     url = urllib.request.Request(URL)
     with urllib.request.urlopen(url) as Response:
         Id = Response.headers.get("X-Request-Id")
